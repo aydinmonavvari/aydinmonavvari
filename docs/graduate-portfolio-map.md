@@ -10,10 +10,10 @@
 
 | Graduate course area | Primary evidence | Concrete artifacts |
 |---|---|---|
-| Statistics & Econometrics I–II | [finance-data-analysis-lab](https://github.com/aydinmonavvari/finance-data-analysis-lab), [m[macro-forecasting-lab](https://github.com/aydinmonavvari/macro-forecasting-lab) | JB/ADF/Ljung-Box diagnostics (`src/*/analytics`), SARIMA selection, Diebold-Mariano + Holm (`src/macro_forecasting_lab/evaluation.py`), rolling-origin design (Tashman 2000) |
+| Statistics & Econometrics I–II | [finance-data-analysis-lab](https://github.com/aydinmonavvari/finance-data-analysis-lab), [macro-forecasting-lab](https://github.com/aydinmonavvari/macro-forecasting-lab) | JB/ADF/Ljung-Box diagnostics (`src/*/analytics`), SARIMA selection, Diebold-Mariano + Holm (`src/macro_forecasting_lab/evaluation.py`), rolling-origin design (Tashman 2000) |
 | Time Series & Forecasting | macro-forecasting-lab, [dl-financial-time-series](https://github.com/aydinmonavvari/dl-financial-time-series) | 16 figures incl. backtest diagnostics; walk-forward folds + embargo; DM test tables in `reports/` |
 | Empirical Asset Pricing / Investments | finance-data-analysis-lab, [portfolio-optimization-lab](https://github.com/aydinmonavvari/portfolio-optimization-lab) | Risk/return & drawdown analytics; efficient-frontier code; OOS net-of-costs backtests; 1/n replication (DeMiguel et al. 2009) |
-| Financial Machine Learning | [m[ml-market-prediction-study](https://github.com/aydinmonavvari/ml-market-prediction-study), dl-financial-time-series | Walk-forward protocol (Lopez de Prado-style embargo), McNemar + Holm, permutation control, no-signal leakage control |
+| Financial Machine Learning | [ml-market-prediction-study](https://github.com/aydinmonavvari/ml-market-prediction-study), dl-financial-time-series | Walk-forward protocol (Lopez de Prado-style embargo), McNemar + Holm, permutation control, no-signal leakage control |
 | Credit Risk & Banking | [credit-risk-modeling](https://github.com/aydinmonavvari/credit-risk-modeling) | PD models, calibration curves, cost-based thresholds, KS statistic, fairness diagnostics (`reports/`) |
 | Fraud / AML Analytics | [fraud-anomaly-detection](https://github.com/aydinmonavvari/fraud-anomaly-detection) | PR-AUC-first evaluation, Isolation Forest vs RF, precision@k lift tables |
 | Risk Management | portfolio-optimization-lab, 🚩 [finscope-ai-research](https://github.com/aydinmonavvari/finscope-ai-research) | Historical/Gaussian VaR & ES modules, drawdown reports, `fig08_var_es.png` |
