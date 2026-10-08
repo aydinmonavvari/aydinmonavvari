@@ -24,7 +24,7 @@
 | Criterion | Score | Evidence & justification |
 |---|---:|---|
 | No fabricated data/results/references | 5 | Every number traceable to `reports/` outputs; reference lists limited to verifiable classics |
-| Honest null results | 5 | Three deliberate null-result studies with leakage controls that *prove* the null is credible (03, 07, calibration in 05) |
+| Honest null results | 5 | Three deliberate null-result studies with leakage controls that make the null credible (permutation control + leakage-mutation test in 03, no-signal control in 07, calibration null in 05) |
 | Cautious claims language | 5 | No "predicts the market" claims anywhere; disclaimers in every README §1 and report |
 | Multiple-testing & uncertainty care | 4 | Holm corrections, Wilson CIs, DM tests; no p-hacking framing |
 | Cost/bias inclusion | 4 | 10 bps costs in all backtests; fairness diagnostics in 05; proxy-metric warnings in 09 |
@@ -35,11 +35,11 @@
 
 | Criterion | Score | Evidence & justification |
 |---|---:|---|
-| Tests | 5 | 300+ offline tests across 10 repos; heavy tests skip cleanly in CI |
-| CI/CD | 5 | GitHub Actions on every repo; all 10 workflows green |
-| Code quality | 4 | ruff-clean everywhere; conventional commits (8–13 per repo) |
+| Tests | 5 | 357 offline test functions across 10 repos (7–79 per repository; recounted during the v1.0.0 remediation pass); heavy tests skip cleanly in CI |
+| CI/CD | 5 | GitHub Actions on every repo (light offline suites; heavy-model jobs documented per-repo) |
+| Code quality | 4 | ruff-clean everywhere; conventional commits (7–17 per repo; verified range) |
 | Reproducibility | 5 | One-command pipelines, fixed seeds, committed metrics/figures, CITATION.cff |
-| Documentation depth | 5 | 23-section READMEs + 13-section research reports per repo |
+| Documentation depth | 5 | 22–23-section READMEs + 13-section research reports per repo |
 | **Subtotal** | **24/25** | |
 
 ## D · Portfolio-level narrative

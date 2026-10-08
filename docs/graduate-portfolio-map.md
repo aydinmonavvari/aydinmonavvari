@@ -19,17 +19,17 @@
 | Risk Management | portfolio-optimization-lab, 🚩 [finscope-ai-research](https://github.com/aydinmonavvari/finscope-ai-research) | Historical/Gaussian VaR & ES modules, drawdown reports, `fig08_var_es.png` |
 | NLP for Finance | [financial-nlp-sentiment](https://github.com/aydinmonavvari/financial-nlp-sentiment) | PhraseBank benchmark, FinBERT vs lexicon/embedding baselines, McNemar test |
 | LLM / RAG Systems for Research | [fin-rag-research-assistant](https://github.com/aydinmonavvari/fin-rag-research-assistant) | BM25/dense/RRF retrievers, gold-verified QA set, refusal policy + failure analysis, hallucination documentation |
-| Data Engineering & Reproducibility | All 10 repositories | CI workflows, 300+ offline tests, provenance JSON, deterministic chunk/seed logic, one-command pipelines |
+| Data Engineering & Reproducibility | All 10 repositories | CI workflows, 357 offline test functions (7–79 per repository), provenance JSON, deterministic chunk/seed logic, one-command pipelines |
 
 ## Map B · By method → repository → result
 
 | Method | Where implemented | Real committed result |
 |---|---|---|
-| ARIMA/SARIMA with rolling-origin eval | macro-forecasting-lab | Inflation h=1 best RMSE 0.246 (not significant after Holm) |
-| Diebold-Mariano comparative testing | macro-forecasting-lab; finscope-ai-research | Unemployment h=12: nothing beats seasonal-naive (p>0.59); inflation: OLS/ridge significantly worse |
+| ARIMA/SARIMA with rolling-origin eval | macro-forecasting-lab | Inflation h=1: SARIMA best RMSE 0.246; all 7 candidate models significantly beat seasonal-naive under the corrected (h−1) HAC bandwidth |
+| Diebold-Mariano comparative testing | macro-forecasting-lab; finscope-ai-research | macro-forecasting-lab — unemployment h=12: no model significantly beats seasonal-naive (OLS significantly worse); flagship — 12-month CPI: OLS/ridge significantly worse (direction-aware DM) |
 | GBM / XGBoost classification | ml-market-prediction-study; credit-risk-modeling | No SPY edge (AUC 0.502); PD ROC-AUC 0.778 |
 | Platt/isotonic calibration | credit-risk-modeling | Brier barely moved — instructive null on ranking metrics |
-| Risk parity (cyclical coord. descent) | portfolio-optimization-lab | OOS Sharpe 0.975 < 1/n 1.006 |
+| Risk parity (cyclical coord. descent) | portfolio-optimization-lab | OOS net Sharpe 0.972 < 1/n 1.005 |
 | Mean-variance SLSQP + tangency | portfolio-optimization-lab; finscope-ai-research | Tangency fallback in 31/31 OOS folds (flagship) |
 | LSTM / GRU / CNN / Transformer | dl-financial-time-series | All AUC ≤ 0.50 (honest null, leak-free control) |
 | FinBERT inference + classical NLP baselines | financial-nlp-sentiment | Macro-F1 0.865 vs 0.733 (McNemar p=2.3e-07) |
