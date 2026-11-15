@@ -10,7 +10,7 @@
 
 | Graduate course area | Primary evidence | Concrete artifacts |
 |---|---|---|
-| Statistics & Econometrics I–II | [finance-data-analysis-lab](https://github.com/aydinmonavvari/finance-data-analysis-lab), [macro-forecasting-lab](https://github.com/aydinmonavvari/macro-forecasting-lab) | JB/ADF/Ljung-Box diagnostics (`src/*/analytics`), SARIMA selection, Diebold-Mariano + Holm (`src/macro_forecasting_lab/evaluation.py`), rolling-origin design (Tashman 2000) |
+| Statistics & Econometrics I–II | [finance-data-analysis-lab](https://github.com/aydinmonavvari/finance-data-analysis-lab), [macro-forecasting-lab](https://github.com/aydinmonavvari/macro-forecasting-lab) | JB/ADF/Ljung-Box diagnostics (`src/finance_data_analysis_lab/stats_tests.py`), SARIMA selection, Diebold-Mariano + Holm (`src/macro_forecasting_lab/evaluation.py`), rolling-origin design (Tashman 2000) |
 | Time Series & Forecasting | macro-forecasting-lab, [dl-financial-time-series](https://github.com/aydinmonavvari/dl-financial-time-series) | 16 figures incl. backtest diagnostics; walk-forward folds + embargo; DM test tables in `reports/` |
 | Empirical Asset Pricing / Investments | finance-data-analysis-lab, [portfolio-optimization-lab](https://github.com/aydinmonavvari/portfolio-optimization-lab) | Risk/return & drawdown analytics; efficient-frontier code; OOS net-of-costs backtests; 1/n replication (DeMiguel et al. 2009) |
 | Financial Machine Learning | [ml-market-prediction-study](https://github.com/aydinmonavvari/ml-market-prediction-study), dl-financial-time-series | Walk-forward protocol (Lopez de Prado-style embargo), McNemar + Holm, permutation control, no-signal leakage control |
@@ -19,7 +19,7 @@
 | Risk Management | portfolio-optimization-lab, 🚩 [finscope-ai-research](https://github.com/aydinmonavvari/finscope-ai-research) | Historical/Gaussian VaR & ES modules, drawdown reports, `fig08_var_es.png` |
 | NLP for Finance | [financial-nlp-sentiment](https://github.com/aydinmonavvari/financial-nlp-sentiment) | PhraseBank benchmark, FinBERT vs lexicon/embedding baselines, McNemar test |
 | LLM / RAG Systems for Research | [fin-rag-research-assistant](https://github.com/aydinmonavvari/fin-rag-research-assistant) | BM25/dense/RRF retrievers, gold-verified QA set, refusal policy + failure analysis, hallucination documentation |
-| Data Engineering & Reproducibility | All 10 repositories | CI workflows, 357 offline test functions (7–79 per repository), provenance JSON, deterministic chunk/seed logic, one-command pipelines |
+| Data Engineering & Reproducibility | All 10 repositories | CI workflows, 418 offline test functions (7–92 per repository), provenance JSON, deterministic chunk/seed logic, one-command pipelines |
 
 ## Map B · By method → repository → result
 
@@ -34,7 +34,7 @@
 | LSTM / GRU / CNN / Transformer | dl-financial-time-series | All AUC ≤ 0.50 (honest null, leak-free control) |
 | FinBERT inference + classical NLP baselines | financial-nlp-sentiment | Macro-F1 0.865 vs 0.733 (McNemar p=2.3e-07) |
 | BM25 / dense / RRF hybrid retrieval | fin-rag-research-assistant | Recall@5: 1.00 / 0.20 / 0.45 |
-| Citation-grounded generation + refusal | fin-rag-research-assistant | Citations 8/8 valid; groundedness 0.035; refusal probes 0/2 |
+| Citation-grounded generation + refusal | fin-rag-research-assistant | Citations 12/12 exist (existence-only check); groundedness 0.020; refusal probes 0/2 |
 | Historical & Gaussian VaR/ES | finscope-ai-research | e.g. equal-weight monthly VaR95 7.9%, ES95 9.2% |
 
 ## Map C · Research-integrity evidence (thesis-ready habits)

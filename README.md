@@ -4,7 +4,7 @@
 
 I build small, end-to-end research studies on **real public data** — each repository is a complete cycle: data acquisition with provenance → methodology → offline-tested code → real run with committed results → cautious interpretation with explicit limitations. I care as much about **documenting what doesn't work** as about positive results, because that is what honest research looks like.
 
-**Timeline.** Built in a focused sprint (October 2026) and released as v1.0.0; individual repositories document their own methodology and limitations. No fabricated history.
+**Timeline.** Built in a focused sprint (October 2026) and released as v1.0.0; portfolio-optimization-lab and finscope-ai-research were subsequently re-released as v1.1.0. Individual repositories document their own methodology and limitations. No fabricated history.
 
 > ⚠️ **Scope.** Everything here is educational research — a record of methods I studied and evaluated on public data. Nothing is investment advice, nothing is a production trading system, and I make no claim that any method here "beats the market." Several of my headline results are honest null results.
 
@@ -25,7 +25,7 @@ I build small, end-to-end research studies on **real public data** — each repo
 | 09 | [fin-rag-research-assistant](https://github.com/aydinmonavvari/fin-rag-research-assistant) | RAG over Fed Beige Book: BM25 vs dense vs hybrid, grounded generation, refusal | Held-out BM25 Recall@5 0.83 (dev 1.00) vs dense 0.33; τ calibrated on dev, evaluated held-out; documented hallucination + refusal-failure findings |
 | 10 | 🚩 [finscope-ai-research](https://github.com/aydinmonavvari/finscope-ai-research) | **Flagship workbench** unifying the portfolio's methods end-to-end | Seasonal-naive beats OLS/ridge on inflation (direction-aware DM); tangency falls back in 31/31 OOS folds |
 
-Every repository ships with: an offline test suite (7–79 test functions per repository; 357 across the portfolio, recounted during the v1.0.0 remediation pass), ruff-clean code, GitHub Actions CI (light offline suites; heavy-model jobs documented per-repo), a 22–23-section README, a 13-section research report, real committed results (`reports/`), figures, `CITATION.cff`, MIT license.
+Every repository ships with: an offline test suite (7–92 test functions per repository; 418 across the portfolio, recounted during the v1.0.0 remediation pass), ruff-clean code, GitHub Actions CI (light offline suites; heavy-model jobs documented per-repo), a 22–23-section README, a 13-section research report, real committed results (`reports/`), figures, `CITATION.cff`, MIT license.
 
 ---
 

@@ -35,9 +35,9 @@
 
 | Criterion | Score | Evidence & justification |
 |---|---:|---|
-| Tests | 5 | 357 offline test functions across 10 repos (7–79 per repository; recounted during the v1.0.0 remediation pass); heavy tests skip cleanly in CI |
+| Tests | 5 | 418 offline test functions across 10 repos (7–92 per repository; recounted during the v1.0.0 remediation pass); heavy tests skip cleanly in CI |
 | CI/CD | 5 | GitHub Actions on every repo (light offline suites; heavy-model jobs documented per-repo) |
-| Code quality | 4 | ruff-clean everywhere; conventional commits (7–17 per repo; verified range) |
+| Code quality | 4 | ruff-clean everywhere; conventional commits (7–16 per repo; verified range) |
 | Reproducibility | 5 | One-command pipelines, fixed seeds, committed metrics/figures, CITATION.cff |
 | Documentation depth | 5 | 22–23-section READMEs + 13-section research reports per repo |
 | **Subtotal** | **24/25** | |

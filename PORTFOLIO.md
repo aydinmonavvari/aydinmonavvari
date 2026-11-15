@@ -55,7 +55,7 @@ Leakage-controlled walk-forward study: can classic ML find exploitable direction
 
 ### 04 · portfolio-optimization-lab
 Mean-variance optimization (SLSQP with documented numerical fixes), risk parity via cyclical coordinate descent, closed-form tangency with frontier scan; walk-forward OOS backtest net of 10 bps.
-**Headline:** equal-weight wins OOS net of 10 bps costs (net Sharpe 1.005; gross 1.006) over risk parity (0.972), max-Sharpe (0.957, with 1.86% cumulative costs) and min-variance (0.691) — an in-repo replication of the 1/n result of DeMiguel et al. (2009), over 1,890 OOS days and 30 quarterly rebalances. Tangency infeasibility handled with a documented min-variance fallback. **30 tests green, CI green.**
+**Headline:** equal-weight wins OOS net of 10 bps costs (net Sharpe 1.005; gross 1.006) over risk parity (0.972), max-Sharpe (0.957, with 1.86% cumulative costs) and min-variance (0.691) — an in-repo replication of the 1/n result of DeMiguel et al. (2009), over 1,890 OOS days and 30 quarterly rebalances. Tangency infeasibility handled with a documented min-variance fallback. **Tests:** main 50 cases (44 test functions) green; `fix/numerical-rigor` branch 73 cases (59 test functions). CI green.
 
 ### 05 · credit-risk-modeling
 Probability-of-default modeling on UCI credit default (30,000 rows, 22.12% default rate): three-way split (train/calibration/untouched test), GBM vs logistic, Platt/isotonic calibration, cost-based thresholding (FN=5×FP), fairness diagnostics (SEX excluded from features).
@@ -79,7 +79,7 @@ Retrieval-augmented QA over 26 Federal Reserve Beige Book documents (public doma
 
 ### 10 · finscope-ai-research (flagship)
 A modular research workbench unifying the portfolio's methods on one codebase: ingestion (yfinance/FRED) → diagnostics → rolling-origin inflation forecasting study → portfolio construction → VaR/ES risk reporting → evidence-first research brief with mandatory limitations section.
-**Headline:** seasonal-naive beats OLS (DM p=0.004) and ridge (p=0.005) on 12-month CPI inflation (35 forecast origins) — direction-aware honest verdict; tangency fallback triggered in 31/31 OOS folds (estimation error as first-class finding); min-variance/max-Sharpe OOS Sharpe 1.36 net of costs (equal-weight 1.23) over 93 monthly OOS observations; equal-weight ES99 9.7%. **51 tests, CI green.**
+**Headline:** seasonal-naive beats OLS (DM p=0.004) and ridge (p=0.005) on 12-month CPI inflation (35 forecast origins) — direction-aware honest verdict; tangency fallback triggered in 31/31 OOS folds (estimation error as first-class finding); min-variance/max-Sharpe OOS Sharpe 1.37 net of costs (equal-weight 1.23) over 93 monthly OOS observations; equal-weight ES99 9.7%. **92 tests, CI green.**
 
 ## 4 · What the portfolio demonstrates (for admissions)
 
@@ -91,7 +91,7 @@ A modular research workbench unifying the portfolio's methods on one codebase: i
 | Optimization & portfolio theory | 04, 10 (numerical robustness, cost-aware OOS) |
 | Risk management | 04, 10 (VaR/ES, drawdowns) |
 | NLP & LLM systems | 08, 09 (benchmarks, RAG, refusal measurement) |
-| Software engineering | All: offline test suites (357 test functions total; 7–79 per repository), ruff, CI, provenance |
+| Software engineering | All: offline test suites (418 test functions total; 7–92 per repository), ruff, CI, provenance |
 | Research writing | All: 13-section research reports with real references |
 
 ## 5 · How to verify any claim
